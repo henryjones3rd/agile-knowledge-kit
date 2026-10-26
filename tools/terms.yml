@@ -1,0 +1,26 @@
+# Terminology standard. check_terms.py fails when a discouraged form appears.
+# Keep this list short and specific: each entry should prevent real confusion.
+discouraged:
+  - pattern: '\bman[- ]?days?\b'
+    use: person-days
+    why: Inclusive and unambiguous.
+  - pattern: '\bstorypoints?\b'
+    use: story point(s)
+    why: Two words, consistent everywhere.
+  - pattern: '\bpoints? (?:=|equals?) (?:a |one )?days?\b'
+    use: relative size
+    why: Story points measure relative size, not time. See relative-estimation.md.
+  - pattern: '\bscrum ?masters? ceremon'
+    use: team ceremonies
+    why: Ceremonies belong to the team.
+  - pattern: '\bwhitelist|\bblacklist'
+    use: allowlist / denylist
+    why: Clear, inclusive terms.
+  - pattern: '\bsimply\b|\bjust do\b'
+    use: (delete it)
+    why: Minimizing language makes readers feel slow.
+
+# Defined terms must be spelled out (with abbreviation) the first time they appear on a page.
+defined_terms:
+  FLR: Feature Launch Reservation
+  WIP: work in progress

@@ -1,0 +1,469 @@
+# Agile Delivery Knowledge Kit
+
+
+---
+source: index.md
+title: Agile Delivery Knowledge Kit
+---
+
+# Agile Delivery Knowledge Kit
+
+This kit turns delivery practices that usually live in a coach's head into
+playbooks, decision guides, and templates any team can pick up on its own.
+
+It is built for distributed teams: several time zones, several holiday
+calendars, and a steady stream of requests from other teams.
+
+## Start here
+
+| If you want to... | Read |
+| --- | --- |
+| Join a new team without disrupting it | [Observe first](getting-started/observe-first.md) |
+| Stop confusing story points with days | [Relative estimation](playbooks/relative-estimation.md) |
+| Commit to work you can actually finish | [Capacity planning](playbooks/capacity-planning.md) |
+| Get help from other teams without scrambling | [Feature Launch Reservations](playbooks/feature-launch-reservations.md) |
+| Finish work instead of starting it | [Work in progress limits and swarming](playbooks/wip-limits-and-swarming.md) |
+| Run a review stakeholders want to attend | [Sprint reviews](playbooks/sprint-reviews.md) |
+| Speed up approvals for standard designs | [Straight-through approval](decision-guides/straight-through-approval.md) |
+
+## The problem this kit addresses
+
+Teams in this situation often finish only about two thirds of what they commit
+to each sprint, and most of that lands in the last two days. That end-of-sprint
+spike is called the **hockey stick**.
+
+The causes are usually structural, not personal:
+
+1. Story points treated as days, so estimates become promises about hours.
+2. Capacity differences across locations that nobody plans for.
+3. Unplanned requests from other teams that never appear in the plan.
+
+Each playbook targets one of those causes.
+
+## How this site is built
+
+Every page is Markdown in Git, checked in CI for broken links, stale content,
+and terminology drift, then published automatically. An
+[`llms.txt`](https://llmstxt.org/) file packages the content for AI assistants.
+See [Contributing](contributing.md) for the full workflow.
+
+---
+source: getting-started/observe-first.md
+title: Observe first
+---
+
+# Observe first
+
+When you are assigned to a new team, resist the urge to roll out practices on
+day one. Understand the team before you try to change it.
+
+## The four phases
+
+1. **Observe.** Attend every ceremony and working session for the first few
+   weeks. Take notes on how work actually arrives, moves, and finishes.
+2. **Help in the here and now.** Remove the blocker in front of the team today.
+   Earning trust comes before proposing change.
+3. **Ask questions.** Two questions reveal the most:
+    - What value does this team create for others?
+    - Why does working with this team feel slow to the people who depend on it?
+4. **Present gradually.** Share observations first, then evidence, then
+   proposed changes. Teams adopt what they help shape.
+
+## What to write down
+
+| Look for | Example signal |
+| --- | --- |
+| How work arrives | Most requests come as chat messages, not backlog items |
+| Where work waits | Reviews sit for days before anyone picks them up |
+| Repeated effort | Every request starts from scratch, even standard ones |
+| Unowned problems | An issue everyone sees but nobody is assigned to fix |
+
+## Why it works
+
+Jumping straight to "better sprints" can make a reactive team more efficient at
+being reactive. Observing first shows you the problem actually worth solving.
+
+## Related
+
+- [Straight-through approval](../decision-guides/straight-through-approval.md)
+- [Capacity planning](../playbooks/capacity-planning.md)
+
+---
+source: playbooks/relative-estimation.md
+title: Relative estimation
+---
+
+# Relative estimation
+
+A story point measures how big a piece of work is **compared with other work
+the team has done**. It is not a unit of time.
+
+## The common failure
+
+Teams often define "1 point = 1 day." Once that happens:
+
+- Estimates turn into promises about hours.
+- People pad estimates to protect themselves.
+- Velocity stops being a forecasting tool and becomes a performance score.
+
+## How to estimate relatively
+
+1. Pick two or three **reference stories** the whole team remembers: one small,
+   one medium, one large.
+2. For each new item, ask "Is this bigger or smaller than the reference?"
+3. Use a coarse scale (1, 2, 3, 5, 8, 13). Gaps between numbers reflect growing
+   uncertainty.
+4. Split anything larger than 13 before committing to it.
+
+## Coaching script
+
+When someone says "That's about three days," reply:
+
+> "Compared with the login story we did last month, is it bigger or smaller?"
+
+Redirect to comparison every time. The habit changes within a few sprints.
+
+## Epics and T-shirt sizes
+
+For quarterly planning, size epics with T-shirt sizes (S, M, L, XL) and map each
+size to a point range only after the team agrees on reference epics.
+
+## Related
+
+- [Capacity planning](capacity-planning.md) uses velocity built on relative estimates.
+
+---
+source: playbooks/capacity-planning.md
+title: Capacity planning
+---
+
+# Capacity planning
+
+Commit to what the team has **actually** delivered recently, adjusted for who
+will be available. Optimism is not a forecast.
+
+## Yesterday's weather
+
+The best predictor of next sprint's velocity is the average of the last three
+sprints. This technique is known in the agile community as **yesterday's
+weather**.
+
+| Sprint | Completed points |
+| --- | --- |
+| Sprint 10 | 31 |
+| Sprint 11 | 27 |
+| Sprint 12 | 32 |
+| **Forecast for Sprint 13** | **30** |
+
+## Adjust for availability
+
+Distributed teams lose capacity unevenly. A national holiday in one country can
+remove a third of a team for a day while the rest work normally.
+
+1. List each team member's location.
+2. Mark that location's public holidays in the sprint.
+3. Add planned time off.
+4. Compute the **capacity factor**: available person-days divided by normal
+   person-days.
+5. Multiply the velocity forecast by the capacity factor.
+
+**Example:** 8 people × 10 days = 80 normal person-days. Holidays and time off
+remove 12, leaving 68. Capacity factor = 68 / 80 = 0.85. Forecast = 30 × 0.85 ≈ 25 points.
+
+## Best case and worst case
+
+Plan quarters with a range, not a single number:
+
+- **Best case:** the highest of the last three sprints × capacity factor.
+- **Worst case:** the lowest of the last three sprints × capacity factor.
+
+Commit to the worst case. Treat anything above it as stretch work.
+
+## Reserve capacity for other teams
+
+If other teams regularly need your help, reserve that time up front with
+[Feature Launch Reservations](feature-launch-reservations.md) instead of letting
+it erode the plan.
+
+## Related
+
+- [Relative estimation](relative-estimation.md)
+- [Work in progress limits and swarming](wip-limits-and-swarming.md)
+
+---
+source: playbooks/feature-launch-reservations.md
+title: Feature Launch Reservations
+---
+
+# Feature Launch Reservations
+
+A **Feature Launch Reservation (FLR)** is a block of time a team books with the
+teams it depends on, during quarterly planning, before the quarter starts.
+
+## The analogy
+
+It works like a restaurant reservation. You book the table ahead of time. You do
+not need to know what you will order. That part emerges during the meal.
+
+Without a reservation, teams scramble mid-quarter over chat, hoping someone is
+available. It is like trying to get a table on a Friday night without calling
+ahead.
+
+## What a reservation looks like
+
+> Sprint 2, first two days, 09:30–11:30 on a video call. It is on the calendar
+> before the quarter starts.
+
+## How it works
+
+1. During quarterly planning, each team lists the features that depend on
+   another team.
+2. The teams agree on reservation windows for those launches.
+3. During a window, the supporting team joins the call **with work they can
+   pick up and put down**.
+4. If nothing goes wrong, they keep working on their own items. If something
+   unexpected happens, the right people are already together with full context.
+
+## Anticipated pushback
+
+| Objection | Response |
+| --- | --- |
+| "We already have a chat group for features." | Good. You have the restaurant's number. Now call ahead and book the table. |
+| "How can we reserve if we don't know the details yet?" | You don't order your meal when you book a table. You just need to know you'll be hungry. |
+| "What if they aren't needed?" | They bring interruptible work. Nothing is wasted. |
+| "I'll just reach out to my contact." | Relationships are great, but a favor isn't a plan. What happens when that person is on vacation? |
+
+## When you don't need one
+
+Small configuration changes and low-risk updates can launch without a
+reservation. Use the [reservation decision guide](../decision-guides/does-this-need-a-reservation.md).
+
+## Template
+
+Book reservations with the [reservation request template](../reusable-templates/reservation-request.md).
+
+---
+source: playbooks/wip-limits-and-swarming.md
+title: WIP limits and swarming
+---
+
+# WIP limits and swarming
+
+Stop starting, start finishing. A **work in progress (WIP) limit** caps how many
+items the team works on at once.
+
+## Why the hockey stick happens
+
+When each person owns their own items, everything is "in progress" until the
+last two days. Then it all closes at once, or doesn't.
+
+## Set a WIP limit
+
+1. Count the people on the team.
+2. Set the in-progress limit below that number. For six people, start at four.
+3. When the column is full, nobody starts new work. They help finish existing work.
+
+## Swarming
+
+**Swarming** means several people work together on the top item until it is
+done. It replaces "my tickets" with "our sprint goal."
+
+- Pair on code and reviews.
+- Test while development is still underway.
+- Celebrate items finished, not items started.
+
+## Measure it
+
+Track how many items finish in the first half of the sprint. That number should
+rise as the hockey stick flattens.
+
+## Related
+
+- [Capacity planning](capacity-planning.md)
+- [Sprint reviews](sprint-reviews.md)
+
+---
+source: playbooks/sprint-reviews.md
+title: Sprint reviews
+---
+
+# Sprint reviews
+
+A sprint review is a working session, not a status report. Stakeholders see
+finished work and help decide what comes next.
+
+## Agenda (45 minutes)
+
+1. **Sprint goal and outcome** (5 min): Did we meet it? One sentence.
+2. **Demo of finished work** (20 min): Only items that meet the definition of done.
+3. **Feedback** (10 min): What should change based on what you saw?
+4. **Look ahead** (10 min): Top items for next sprint and any needed
+   [Feature Launch Reservations](feature-launch-reservations.md).
+
+## Rules
+
+- Demo working software, not slides.
+- The people who built it present it.
+- Unfinished work is not demoed. Say so plainly and move on.
+
+## Related
+
+- [Work in progress limits and swarming](wip-limits-and-swarming.md)
+
+---
+source: decision-guides/straight-through-approval.md
+title: Straight-through approval
+---
+
+# Straight-through approval
+
+If a design is built entirely on **pre-approved standard components**, most of
+the review has already been done. Give it a fast path.
+
+## Decision guide
+
+```mermaid
+flowchart TD
+    A[Design submitted] --> B{Uses only pre-approved<br/>standard components?}
+    B -- Yes --> C{Any deviation from<br/>standard configuration?}
+    B -- No --> F[Full review]
+    C -- No --> D[Straight-through approval]
+    C -- Yes --> E[Targeted review of<br/>deviations only]
+```
+
+## Criteria for straight-through
+
+All three must be true:
+
+1. Every component appears on the approved standards list.
+2. Each component uses its standard configuration with no overrides.
+3. The design owner has completed the self-service checklist.
+
+## Why it matters
+
+Review teams that start every request from scratch stay permanently reactive.
+Encoding the standard into a fast path frees experts for the reviews that
+actually need judgment.
+
+## Related
+
+- [Observe first](../getting-started/observe-first.md) describes how this pattern was found.
+
+---
+source: decision-guides/does-this-need-a-reservation.md
+title: Does this launch need a reservation?
+---
+
+# Does this launch need a reservation?
+
+Not every launch needs a [Feature Launch Reservation](../playbooks/feature-launch-reservations.md).
+Answer three questions.
+
+| Question | If yes |
+| --- | --- |
+| Does the launch touch a system another team owns? | Lean toward a reservation |
+| Would a failure need that team to diagnose it? | Book a reservation |
+| Is it a small configuration change with an easy rollback? | Launch and monitor asynchronously |
+
+## Rule of thumb
+
+If you would be messaging another team within an hour of something going wrong,
+book the reservation.
+
+---
+source: reusable-templates/reservation-request.md
+title: Reservation request template
+---
+
+# Reservation request template
+
+Copy this into your planning board or calendar invite.
+
+```markdown
+## Feature Launch Reservation
+
+- Feature: <name and link to backlog item>
+- Requesting team: <team>
+- Supporting team: <team>
+- Window: Sprint <n>, <dates>, <start>–<end> <time zone>
+- Call link: <link>
+- Why this team: <system or expertise you may need>
+- Rollback plan: <one line>
+- Reminder: bring work you can pick up and put down
+```
+
+See [Feature Launch Reservations](../playbooks/feature-launch-reservations.md)
+for how reservations work.
+
+---
+source: contributing.md
+title: Contributing
+---
+
+# Contributing
+
+Every page is Markdown in Git. Changes go through a pull request and must pass
+automated checks before they publish.
+
+## Required front matter
+
+```yaml
+---
+title: Page title
+description: One sentence. Used for search, llms.txt, and AI retrieval.
+owner: Person accountable for accuracy
+last_reviewed: YYYY-MM-DD
+review_cycle_days: 180
+tags: [topic]
+---
+```
+
+## Checks run on every pull request
+
+| Check | Command | Fails when |
+| --- | --- | --- |
+| Front matter | `python tools/check_frontmatter.py` | A required field is missing or malformed |
+| Freshness | `python tools/check_freshness.py` | A page is past its review cycle |
+| Links | `python tools/check_links.py` | An internal link or anchor is broken |
+| Terminology | `python tools/check_terms.py` | A discouraged term appears |
+| Prose style | Vale | A style rule is violated |
+| Retrieval eval | `python tools/eval_retrieval.py` | An eval question doesn't retrieve its expected page |
+| Build | `mkdocs build --strict` | MkDocs reports any warning |
+
+Run them all locally with `make check`.
+
+## Writing rules
+
+- Lead with the point. First sentence answers the question.
+- One idea per page. Link instead of repeating.
+- Define a term the first time you use it.
+- Prefer tables for comparisons and numbered lists for steps.
+
+---
+source: about.md
+title: About this project
+---
+
+# About this project
+
+Built by **Henry Jones III**, a delivery leader with 25+ years helping
+engineering teams ship. The content comes from practices developed while
+coaching distributed teams across three continents.
+
+## What this project demonstrates
+
+| Practice | Where to see it |
+| --- | --- |
+| Docs-as-code | Markdown in Git, pull request workflow, MkDocs |
+| CI/CD for content | GitHub Actions: lint, validate, build, publish |
+| Content quality automation | Link, freshness, front matter, and terminology checks in `tools/` |
+| Prose linting | Vale with a project style and vocabulary |
+| AI-ready knowledge | Generated `llms.txt` and `llms-full.txt` |
+| Answer-accuracy evaluation | Retrieval eval set in `evals/questions.yml` |
+| MCP-accessible source | A small MCP server in `mcp_server/` that serves these docs to AI agents |
+| Standards as templates | [Reservation request template](reusable-templates/reservation-request.md) |
+| Tribal knowledge to self-service | Every playbook and decision guide |
+
+## Contact
+
+Henry.Jones3rd@gmail.com

@@ -1,0 +1,8 @@
+extends: existence
+message: "Start with the point, not '%s'."
+level: warning
+ignorecase: true
+tokens:
+  - this document (outlines|describes|explains)
+  - the purpose of this (page|document)
+  - in this (page|document|section),? we will

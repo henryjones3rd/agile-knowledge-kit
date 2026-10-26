@@ -1,0 +1,59 @@
+site_name: Agile Delivery Knowledge Kit
+site_description: Playbooks, decision guides, and templates for predictable delivery on distributed teams.
+site_author: Henry Jones III
+# Update after you create the GitHub repo:
+# site_url: https://<your-github-username>.github.io/agile-knowledge-kit/
+# repo_url: https://github.com/<your-github-username>/agile-knowledge-kit
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.footer
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Observe first: getting-started/observe-first.md
+  - Playbooks:
+      - Relative estimation: playbooks/relative-estimation.md
+      - Capacity planning: playbooks/capacity-planning.md
+      - Feature Launch Reservations: playbooks/feature-launch-reservations.md
+      - WIP limits and swarming: playbooks/wip-limits-and-swarming.md
+      - Sprint reviews: playbooks/sprint-reviews.md
+  - Decision guides:
+      - Straight-through approval: decision-guides/straight-through-approval.md
+      - Does this launch need a reservation?: decision-guides/does-this-need-a-reservation.md
+  - Templates:
+      - Reservation request: reusable-templates/reservation-request.md
+  - Contributing: contributing.md
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+validation:
+  links:
+    not_found: warn
+    anchors: warn

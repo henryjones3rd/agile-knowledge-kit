@@ -1,0 +1,11 @@
+MkDocs
+Vale
+llms
+FLR
+WIP
+[Ss]warming
+[Bb]acklog
+[Mm]ermaid
+YAML
+allowlist
+denylist

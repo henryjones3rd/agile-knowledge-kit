@@ -1,0 +1,47 @@
+# Retrieval eval set: real questions people ask, the page that should answer each,
+# and facts that page must contain. Add a row whenever a question gets a wrong answer.
+threshold_top3: 0.9   # fraction of questions whose expected page must rank in the top 3
+
+questions:
+  - q: Is one story point equal to one day of work?
+    page: playbooks/relative-estimation.md
+    facts: ["not a unit of time"]
+  - q: How do we forecast how many points to commit to next sprint?
+    page: playbooks/capacity-planning.md
+    facts: ["average of the last three sprints"]
+  - q: Our India team has holidays next sprint. How do we adjust the plan?
+    page: playbooks/capacity-planning.md
+    facts: ["capacity factor"]
+  - q: Should we commit to the best case or worst case velocity for the quarter?
+    page: playbooks/capacity-planning.md
+    facts: ["Commit to the worst case"]
+  - q: How do I get another team's help for a launch without scrambling on chat?
+    page: playbooks/feature-launch-reservations.md
+    facts: ["during quarterly planning"]
+  - q: What should the supporting team do if they aren't needed during the reservation window?
+    page: playbooks/feature-launch-reservations.md
+    facts: ["pick up and put down"]
+  - q: Does a small config change with easy rollback need a reservation?
+    page: decision-guides/does-this-need-a-reservation.md
+    facts: ["Launch and monitor asynchronously"]
+  - q: Why does all our work finish in the last two days of the sprint?
+    page: playbooks/wip-limits-and-swarming.md
+    facts: ["hockey stick"]
+  - q: What WIP limit should a team of six people start with?
+    page: playbooks/wip-limits-and-swarming.md
+    facts: ["start at four"]
+  - q: What is the agenda for a sprint review meeting with stakeholders?
+    page: playbooks/sprint-reviews.md
+    facts: ["Demo of finished work"]
+  - q: Can a design built on pre-approved standard components skip the full review?
+    page: decision-guides/straight-through-approval.md
+    facts: ["Straight-through approval"]
+  - q: I just joined a new team. Should I change their process right away?
+    page: getting-started/observe-first.md
+    facts: ["Observe"]
+  - q: What fields go in the front matter of a new page?
+    page: contributing.md
+    facts: ["review_cycle_days"]
+  - q: Is there a template for booking a launch reservation?
+    page: reusable-templates/reservation-request.md
+    facts: ["Rollback plan"]
