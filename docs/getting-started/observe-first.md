@@ -40,5 +40,4 @@ being reactive. Observing first shows you the problem actually worth solving.
 
 ## Related
 
-- [Straight-through approval](../decision-guides/straight-through-approval.md)
 - [Capacity planning](../playbooks/capacity-planning.md)
