@@ -20,7 +20,6 @@
 
 ## Decision guides
 
-- [Straight-through approval](https://henryjones3rd.github.io/agile-knowledge-kit/decision-guides/straight-through-approval/): Decide when a design built on pre-approved standard components can skip the full review and get a fast approval.
 - [Does this launch need a reservation?](https://henryjones3rd.github.io/agile-knowledge-kit/decision-guides/does-this-need-a-reservation/): A quick triage to decide whether a launch needs a Feature Launch Reservation or can launch and be monitored asynchronously.
 
 ## Templates
