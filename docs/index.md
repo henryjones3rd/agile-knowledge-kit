@@ -25,7 +25,6 @@ calendars, and a steady stream of requests from other teams.
 | Get help from other teams without scrambling | [Feature Launch Reservations](playbooks/feature-launch-reservations.md) |
 | Finish work instead of starting it | [Work in progress limits and swarming](playbooks/wip-limits-and-swarming.md) |
 | Run a review stakeholders want to attend | [Sprint reviews](playbooks/sprint-reviews.md) |
-| Speed up approvals for standard designs | [Straight-through approval](decision-guides/straight-through-approval.md) |
 
 ## The problem this kit addresses
 
