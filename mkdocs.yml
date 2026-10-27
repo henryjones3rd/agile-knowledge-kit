@@ -34,7 +34,6 @@ nav:
       - WIP limits and swarming: playbooks/wip-limits-and-swarming.md
       - Sprint reviews: playbooks/sprint-reviews.md
   - Decision guides:
-      - Straight-through approval: decision-guides/straight-through-approval.md
       - Does this launch need a reservation?: decision-guides/does-this-need-a-reservation.md
   - Templates:
       - Reservation request: reusable-templates/reservation-request.md
