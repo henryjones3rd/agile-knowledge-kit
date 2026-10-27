@@ -24,7 +24,6 @@ calendars, and a steady stream of requests from other teams.
 | Get help from other teams without scrambling | [Feature Launch Reservations](playbooks/feature-launch-reservations.md) |
 | Finish work instead of starting it | [Work in progress limits and swarming](playbooks/wip-limits-and-swarming.md) |
 | Run a review stakeholders want to attend | [Sprint reviews](playbooks/sprint-reviews.md) |
-| Speed up approvals for standard designs | [Straight-through approval](decision-guides/straight-through-approval.md) |
 
 ## The problem this kit addresses
 
@@ -85,7 +84,6 @@ being reactive. Observing first shows you the problem actually worth solving.
 
 ## Related
 
-- [Straight-through approval](../decision-guides/straight-through-approval.md)
 - [Capacity planning](../playbooks/capacity-planning.md)
 
 ---
@@ -309,45 +307,6 @@ finished work and help decide what comes next.
 ## Related
 
 - [Work in progress limits and swarming](wip-limits-and-swarming.md)
-
----
-source: decision-guides/straight-through-approval.md
-title: Straight-through approval
----
-
-# Straight-through approval
-
-If a design is built entirely on **pre-approved standard components**, most of
-the review has already been done. Give it a fast path.
-
-## Decision guide
-
-```mermaid
-flowchart TD
-    A[Design submitted] --> B{Uses only pre-approved<br/>standard components?}
-    B -- Yes --> C{Any deviation from<br/>standard configuration?}
-    B -- No --> F[Full review]
-    C -- No --> D[Straight-through approval]
-    C -- Yes --> E[Targeted review of<br/>deviations only]
-```
-
-## Criteria for straight-through
-
-All three must be true:
-
-1. Every component appears on the approved standards list.
-2. Each component uses its standard configuration with no overrides.
-3. The design owner has completed the self-service checklist.
-
-## Why it matters
-
-Review teams that start every request from scratch stay permanently reactive.
-Encoding the standard into a fast path frees experts for the reviews that
-actually need judgment.
-
-## Related
-
-- [Observe first](../getting-started/observe-first.md) describes how this pattern was found.
 
 ---
 source: decision-guides/does-this-need-a-reservation.md
