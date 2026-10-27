@@ -67,8 +67,8 @@ has holidays?"*
 
 ## Results (current)
 
-- 12 pages, 25 internal links, 0 broken
-- Retrieval eval: 14/14 top-1 (100%)
+- 11 pages, 22 internal links, 0 broken
+- Retrieval eval: 13/13 top-1 (100%)
 - Vale: 0 errors, 0 warnings
 
 ## Author
