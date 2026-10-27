@@ -33,9 +33,6 @@ questions:
   - q: What is the agenda for a sprint review meeting with stakeholders?
     page: playbooks/sprint-reviews.md
     facts: ["Demo of finished work"]
-  - q: Can a design built on pre-approved standard components skip the full review?
-    page: decision-guides/straight-through-approval.md
-    facts: ["Straight-through approval"]
   - q: I just joined a new team. Should I change their process right away?
     page: getting-started/observe-first.md
     facts: ["Observe"]
