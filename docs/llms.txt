@@ -4,30 +4,30 @@
 
 ## Overview
 
-- [Home](./): Field-tested playbooks, decision guides, and templates for distributed engineering teams that want predictable delivery.
+- [Home](https://henryjones3rd.github.io/agile-knowledge-kit/): Field-tested playbooks, decision guides, and templates for distributed engineering teams that want predictable delivery.
 
 ## Getting started
 
-- [Observe first](getting-started/observe-first/): How a delivery lead joins a new team by observing, helping, and asking questions before proposing change.
+- [Observe first](https://henryjones3rd.github.io/agile-knowledge-kit/getting-started/observe-first/): How a delivery lead joins a new team by observing, helping, and asking questions before proposing change.
 
 ## Playbooks
 
-- [Relative estimation](playbooks/relative-estimation/): Why story points measure size relative to other work, not days, and how to coach a team out of the points-equal-days habit.
-- [Capacity planning](playbooks/capacity-planning/): Forecast sprint and quarterly commitments from actual past velocity, adjusted for holidays and time off across locations.
-- [Feature Launch Reservations](playbooks/feature-launch-reservations/): Reserve time with the teams you depend on during quarterly planning, instead of scrambling for help mid-quarter.
-- [WIP limits and swarming](playbooks/wip-limits-and-swarming/): Limit work in progress and swarm on the highest-priority item to finish work steadily instead of in an end-of-sprint spike.
-- [Sprint reviews](playbooks/sprint-reviews/): Run sprint reviews as working sessions where stakeholders see finished work and shape what comes next.
+- [Relative estimation](https://henryjones3rd.github.io/agile-knowledge-kit/playbooks/relative-estimation/): Why story points measure size relative to other work, not days, and how to coach a team out of the points-equal-days habit.
+- [Capacity planning](https://henryjones3rd.github.io/agile-knowledge-kit/playbooks/capacity-planning/): Forecast sprint and quarterly commitments from actual past velocity, adjusted for holidays and time off across locations.
+- [Feature Launch Reservations](https://henryjones3rd.github.io/agile-knowledge-kit/playbooks/feature-launch-reservations/): Reserve time with the teams you depend on during quarterly planning, instead of scrambling for help mid-quarter.
+- [WIP limits and swarming](https://henryjones3rd.github.io/agile-knowledge-kit/playbooks/wip-limits-and-swarming/): Limit work in progress and swarm on the highest-priority item to finish work steadily instead of in an end-of-sprint spike.
+- [Sprint reviews](https://henryjones3rd.github.io/agile-knowledge-kit/playbooks/sprint-reviews/): Run sprint reviews as working sessions where stakeholders see finished work and shape what comes next.
 
 ## Decision guides
 
-- [Straight-through approval](decision-guides/straight-through-approval/): Decide when a design built on pre-approved standard components can skip the full review and get a fast approval.
-- [Does this launch need a reservation?](decision-guides/does-this-need-a-reservation/): A quick triage to decide whether a launch needs a Feature Launch Reservation or can launch and be monitored asynchronously.
+- [Straight-through approval](https://henryjones3rd.github.io/agile-knowledge-kit/decision-guides/straight-through-approval/): Decide when a design built on pre-approved standard components can skip the full review and get a fast approval.
+- [Does this launch need a reservation?](https://henryjones3rd.github.io/agile-knowledge-kit/decision-guides/does-this-need-a-reservation/): A quick triage to decide whether a launch needs a Feature Launch Reservation or can launch and be monitored asynchronously.
 
 ## Templates
 
-- [Reservation request](reusable-templates/reservation-request/): Copy-and-fill template for booking a Feature Launch Reservation with a supporting team.
+- [Reservation request](https://henryjones3rd.github.io/agile-knowledge-kit/reusable-templates/reservation-request/): Copy-and-fill template for booking a Feature Launch Reservation with a supporting team.
 
 ## Overview
 
-- [Contributing](contributing/): The docs-as-code workflow for this kit, including required front matter and the automated checks every pull request must pass.
-- [About](about/): Who built this knowledge kit, why, and how each part maps to modern knowledge operations practice.
+- [Contributing](https://henryjones3rd.github.io/agile-knowledge-kit/contributing/): The docs-as-code workflow for this kit, including required front matter and the automated checks every pull request must pass.
+- [About](https://henryjones3rd.github.io/agile-knowledge-kit/about/): Who built this knowledge kit, why, and how each part maps to modern knowledge operations practice.

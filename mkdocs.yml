@@ -1,9 +1,8 @@
 site_name: Agile Delivery Knowledge Kit
 site_description: Playbooks, decision guides, and templates for predictable delivery on distributed teams.
 site_author: Henry Jones III
-# Update after you create the GitHub repo:
-# site_url: https://<your-github-username>.github.io/agile-knowledge-kit/
-# repo_url: https://github.com/<your-github-username>/agile-knowledge-kit
+site_url: https://henryjones3rd.github.io/agile-knowledge-kit/
+repo_url: https://github.com/henryjones3rd/agile-knowledge-kit
 
 theme:
   name: material

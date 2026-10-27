@@ -4,7 +4,7 @@ Field-tested playbooks, decision guides, and templates for distributed
 engineering teams, built and published as **docs-as-code** with automated
 quality checks and AI-ready packaging.
 
-**Live site:** `https://<your-github-username>.github.io/agile-knowledge-kit/`
+**Live site:** https://henryjones3rd.github.io/agile-knowledge-kit/
 
 ## What's inside
 
